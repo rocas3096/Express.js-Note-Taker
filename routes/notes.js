@@ -13,7 +13,7 @@ notes.post('/', (req, res) => {
 
     const { title, text } = req.body;
 
-    if ( title && text) {
+    if (title && text) {
         const newNote = {
             title,
             text,
@@ -25,6 +25,37 @@ notes.post('/', (req, res) => {
     } else {
         res.status(500).json({ error: 'Error in adding Note' })
     }
+});
+
+const fs = require('fs');
+
+notes.delete('/:id', (req, res) => {
+    console.info(`${req.method} request received to delete a note`);
+
+    const noteId = req.params.id;
+
+    readFromFile('./db/db.json')
+        .then((data) => {
+            let notes = JSON.parse(data);
+            const filteredNotes = notes.filter((note) => note.id !== noteId);
+
+            if (notes.length !== filteredNotes.length) {
+                fs.writeFile('./db/db.json', JSON.stringify(filteredNotes, null, 2), (err) => {
+                    if (err) {
+                        console.error(err);
+                        res.status(500).json({ error: 'Error deleting note' });
+                    } else {
+                        res.json('Note deleted successfully');
+                    }
+                });
+            } else {
+                res.status(404).json({ error: 'Note not found' });
+            }
+        })
+        .catch((err) => {
+            console.error(err);
+            res.status(500).json({ error: 'Error reading notes' });
+        });
 });
 
 
