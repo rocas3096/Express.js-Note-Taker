@@ -27,5 +27,5 @@ app.use('/api/notes', notes);
 app.use('/api', index);
 
 app.listen(PORT, () =>
-    console.log(`App listening at http://localhost:${PORT} 🚀`)
+    console.log(`App listening at ${PORT} 🚀`)
 );
