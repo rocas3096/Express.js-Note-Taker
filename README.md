@@ -34,7 +34,7 @@ To use the Express.js Note Taker:
 7. To delete a note, click the small trash can icon next to the note.
 8. You can also try the [deployed version of the application on Heroku](https://still-reef-21653.herokuapp.com/).
 
-A demo video is available to demonstrate the functionality: [Demo of Note Taker](https://drive.google.com/uc?id=1_c1tNxR7CS5auEFcTuyO1txj6EnZX9h0)
+A demo video is available to demonstrate the functionality:
 
 [![Demo of Note taker demonstrating functionality](https://drive.google.com/thumbnail?id=1_c1tNxR7CS5auEFcTuyO1txj6EnZX9h0)](https://drive.google.com/uc?id=1_c1tNxR7CS5auEFcTuyO1txj6EnZX9h0)
 
