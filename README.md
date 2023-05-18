@@ -18,7 +18,8 @@ To deploy this code on your own head to the repository located here https://gith
 ## Usage
 Type npm start into your terminal to use the note taker. Once the link with the text displaying `App listening at http://localhost:${PORT} 🚀` appears simply hod ctrl and left click to open the note taker in your browser. Click get started then begin typing your title and note content then hit save to save your note. If performed correctly a note should be saved on the left hand side and be viewable when the text is clicked. Simply modify the note then hit save again if you wish to change anything and if you wish to delete it entirely, hit the small trash can icon on the right of your note. A demo has been provided below for your convinience.  
 
-[![Demo of Note taker demonstrating functionality](https://drive.google.com/thumbnail?id=1pK0wxBpWxbH6I842jSeLxLdIswzWnkBF)][![Demo of Note taker screenshot](https://drive.google.com/file/d/1pK0wxBpWxbH6I842jSeLxLdIswzWnkBF/preview)]
+[![Demo of Note taker demonstrating functionality](https://drive.google.com/thumbnail?id=1pK0wxBpWxbH6I842jSeLxLdIswzWnkBF)]![Demo of Note taker screenshot](https://drive.google.com/uc?id=1pK0wxBpWxbH6I842jSeLxLdIswzWnkBF)
+
 
 You could also skip the headache of downloading the code and deploying locally and just use this heroku link --> https://still-reef-21653.herokuapp.com/. Click get started then begin tying your titel and note content then hit save to save your note. IF oerfirmed correctly a note should be saved on the left hand side and be viewable when the text is clicked. Simply modify the note then hite save again if you wish to change anything and if you wish to delete it entirely, hit the small trash can icon on the right of your note. A demo has been provided below for your convenience.
 
